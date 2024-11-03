@@ -6,9 +6,29 @@ body {
     margin-top: 20px;
 }
 iframe {
-    width: 100%;
+    width: 90%;
     height: 80px;
-    border-radius: 12px;
     border: 0;
-    margin-bottom: 20px;
+    flex-grow: 4;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li i {
+    margin-right: 8px;
+    flex-grow: 1;
+    z-index: -10;
+}
+li {
+    padding: 10px;
+    margin: 5px 0;
+    background: rgba(128, 128, 128, 0.15);
+    border: 1px solid #ccc;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+}
+li.dragging {
+    opacity: 0.5;
 }
